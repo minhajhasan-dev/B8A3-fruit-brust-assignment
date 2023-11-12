@@ -11,12 +11,41 @@
     />
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-family: "Lato", sans-serif;
+      }
+      .primary-btn {
+        border-radius: 8px;
+        background: #f85559;
+        color: #fff;
+        text-align: center;
+        font-family: Lato;
+        font-size: 1rem;
+        font-weight: 800;
+        border: none;
+      }
+      /* carousel background */
+      .car-bg {
+        background: linear-gradient(
+          180deg,
+          #121212 -14.42%,
+          rgba(18, 18, 18, 0) 100%
+        );
+      }
+    </style>
   </head>
   <body>
     <header>
       <!-- nav bar  -->
       <div
-        class="navbar text-white md:bg-red-500 bg-base-100 px-10 py-7 mt-8 mb-14 max-w-7xl rounded-full mx-auto"
+        class="navbar text-white md:bg-red-500 bg-base-100 px-10 py-7 mt-8 lg:mb-14 md:mb-7 mb-2 max-w-7xl rounded-full mx-auto"
       >
         <div class="md:flex-1 hidden md:hidden lg:inline">
           <ul
@@ -79,7 +108,113 @@
           </svg>
         </div>
       </div>
-      <!-- hero section            -->
+      <!-- hero section carousel-->
+      <div class="lg:max-w-7xl w-[95%] mx-auto">
+        <div class="carousel w-full">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full text-center car-bg"
+          >
+            <img src="/images/banner1.png" class="w-full" />
+            <!-- carousel text  -->
+            <div
+              class="absolute inset-x-[15%] md:inset-y-[15%] -inset-y-[10%] bottom-5 py-5 text-center text-white md:block space-y-3"
+            >
+              <h1 class="md:text-7xl text-xl font-bold">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-xs md:text-base hidden md:block">
+                Some representative placeholder content for the first slide.
+              </p>
+              <button class="btn primary-btn normal-case">Shop Now</button>
+            </div>
+            <!-- carousel text ends here  -->
+
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide2"
+            class="carousel-item relative w-full text-center car-bg"
+          >
+            <img src="/images//banner2.png" class="w-full" />
+            <!-- carousel text  -->
+            <div
+              class="absolute inset-x-[15%] md:inset-y-[15%] -inset-y-[10%] bottom-5 py-5 text-center text-white md:block space-y-3"
+            >
+              <h1 class="md:text-7xl text-2xl font-bold">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-sm md:text-base hidden md:block">
+                Some representative placeholder content for the first slide.
+              </p>
+              <button class="btn primary-btn normal-case">Shop Now</button>
+            </div>
+            <!-- carousel text ends here  -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide3"
+            class="carousel-item relative w-full text-center car-bg"
+          >
+            <img src="/images/banner3.png" class="w-full" />
+            <!-- carousel text  -->
+            <div
+              class="absolute inset-x-[15%] md:inset-y-[15%] -inset-y-[10%] bottom-5 py-5 text-center text-white md:block space-y-3"
+            >
+              <h1 class="md:text-7xl text-2xl font-bold">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-sm md:text-base hidden md:block">
+                Some representative placeholder content for the first slide.
+              </p>
+              <button class="btn primary-btn normal-case">Shop Now</button>
+            </div>
+            <!-- carousel text ends here  -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div
+            id="slide4"
+            class="carousel-item relative w-full text-center car-bg"
+          >
+            <img src="/images//banner4.png" class="w-full" />
+            <!-- carousel text  -->
+            <div
+              class="absolute inset-x-[15%] md:inset-y-[15%] -inset-y-[10%] bottom-5 py-5 text-center text-white md:block space-y-3"
+            >
+              <h1 class="md:text-7xl text-2xl font-bold">
+                Exotic tastes at your doorstep
+              </h1>
+              <p class="text-sm md:text-base hidden md:block">
+                Some representative placeholder content for the first slide.
+              </p>
+              <button class="btn primary-btn normal-case">Shop Now</button>
+            </div>
+            <!-- carousel text ends here  -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- another carousel  -->
     </header>
   </body>
 </html>
