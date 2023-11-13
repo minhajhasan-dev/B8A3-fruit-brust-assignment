@@ -42,7 +42,7 @@
     </style>
   </head>
   <body>
-    <header>
+    <header class="mb-40">
       <!-- nav bar  -->
       <div
         class="navbar text-white md:bg-red-500 bg-base-100 px-10 py-7 mt-8 lg:mb-14 md:mb-7 mb-2 max-w-screen-xl rounded-full mx-auto"
@@ -242,5 +242,47 @@
         </div>
       </div>
     </header>
+    <main class="lg:max-w-screen-xl w-[95%] mx-auto relative mb-15">
+      <!-- deal of the day section  -->
+      <section class="mb-10 flex justify-between">
+        <div class="flex-1">
+          <h1>Deal of the day</h1>
+          <p>
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
+        </div>
+        <!-- text ends here  -->
+        <div class="flex-1">
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 15"></span>
+              </span>
+              days
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 10"></span>
+              </span>
+              hours
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 24"></span>
+              </span>
+              min
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 45"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
